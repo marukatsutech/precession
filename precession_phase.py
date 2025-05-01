@@ -414,11 +414,11 @@ def create_parameter_setter():
 
     # var_phase_stp = tk.StringVar(root)
     var_phase_stp.set(str(phase_step_deg))
-    spn_stp_angle = tk.Spinbox(
+    spn_phase_stp = tk.Spinbox(
         frm_phase_step, textvariable=var_phase_stp, format="%.0f", from_=-360, to=360, increment=1,
         command=lambda: set_phase_step_deg(float(var_phase_stp.get())), width=5
     )
-    spn_stp_angle.pack(side="left")
+    spn_phase_stp.pack(side="left")
 
     # Precession on/off
     frm_precession = ttk.Labelframe(root, relief="ridge", text="Precession", labelanchor='n')
