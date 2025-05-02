@@ -385,7 +385,7 @@ def set_cmap(value):
     elif value == 3:
         scatter_internal_phase.set_cmap("Reds")
     elif value == 4:
-        scatter_internal_phase.set_cmap("spring")
+        scatter_internal_phase.set_cmap("viridis")
     elif value == 5:
         scatter_internal_phase.set_cmap("hsv")
 
@@ -455,7 +455,7 @@ def create_parameter_setter():
     rd_op_cmap3 = tk.Radiobutton(frm_cmap, text="Reds", value=3, variable=var_cmap,
                                  command=lambda: set_cmap(3))
     rd_op_cmap3.pack(side="left")
-    rd_op_cmap4 = tk.Radiobutton(frm_cmap, text="spring", value=4, variable=var_cmap,
+    rd_op_cmap4 = tk.Radiobutton(frm_cmap, text="viridis", value=4, variable=var_cmap,
                                  command=lambda: set_cmap(4))
     rd_op_cmap4.pack(side="left")
     rd_op_cmap5 = tk.Radiobutton(frm_cmap, text="hsv", value=5, variable=var_cmap,
